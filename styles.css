@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.news, .popular-courses {
+    margin-top: 20px;
+}
+
+.news-item, .course-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#courses-overview {
+    list-style: none;
+    padding: 0;
+}
+
+#courses-overview li {
+    margin-bottom: 10px;
+}
+
+#login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#login-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #575757;
+}
+
+/* Стилі для зображень */
+#image-list img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}

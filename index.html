@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підготовка до НМТ з Математики</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">НМТ Математика</div>
+        <img src="images/image1.jpg" alt="Math Preparation Image" style="width: 20%";>
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#courses">Курси</a></li>
+                <li><a href="#materials">Матеріали</a></li>
+                <li><a href="#forums">Форуми</a></li>
+                <li><a href="#profile">Кабінет</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Ласкаво просимо до підготовки до НМТ з математики</h1>
+        <p>Тут ви знайдете всі необхідні матеріали та курси для успішного складання НМТ.</p>
+        <div class="news">
+            <h2>Новини та Оголошення</h2>
+            <div id="news-list"></div>
+        </div>
+        <div class="popular-courses">
+            <h2>Популярні Курси (Для запису на курс можна скористатися контактною інформацією в кінці сторінки.)</h2>
+            <div id="courses-list"></div>
+        </div>
+    </section>
+    <section id="courses">
+        <h2>Курси</h2>
+        <ul id="courses-overview"></ul>
+    </section>
+    <section id="materials">
+        <h2>Навчальні матеріали</h2>
+        <div>
+            <h3>Відео Лекції</h3>
+            <div id="videos"></div>
+        </div>
+        <div>
+            <h3>Текстові Матеріали</h3>
+            <div id="texts"></div>
+        </div>
+        <div>
+            <h3>Інтерактивні Тести</h3>
+            <div id="tests"></div>
+        </div>
+    </section>
+    <section id="forum">
+        <h2>Форум</h2>
+        <form id="forum-form">
+            <textarea id="forum-input" rows="4" cols="50" placeholder="Напишіть своє повідомлення тут..."></textarea>
+            <br />
+            <button type="submit">Опублікувати</button>
+        </form>
+        <div id="forum-messages">
+            <h3>Повідомлення:</h3>
+            <ul id="messages-list"></ul>
+        </div>
+    </section>
+    <section id="registration">
+        <h2>Реєстрація</h2>
+        <form id="registration-form">
+            <label for="username">Логін:</label>
+            <input type="text" id="reg-username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password" name="password" required>
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </section>
+    <section id="profile">
+        <h2>Кабінет користувача</h2>
+        <form id="login-form">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Увійти</button>
+        </form>
+        <div id="user-info"></div>
+    </section>
+    
+    <!-- Форма для завантаження файлів -->
+    <form id="file-upload-form" enctype="multipart/form-data">
+        <input type="file" id="file-upload" name="file" accept=".txt,.pdf,.doc,.docx">
+        <button type="submit">Завантажити файл</button>
+    </form>
+
+<!-- Список завантажених файлів -->
+<ul id="file-list"></ul>
+
+
+    <footer>
+        <p>Контактна інформація | Соціальні мережі | Політика конфіденційності</p>
+        <p>+380507804392        | тг: ignatiev_oleksandr | </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
